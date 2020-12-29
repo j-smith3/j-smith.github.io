@@ -1,0 +1,186 @@
+<!--
+ Name: Justin Smith
+   Course: ITSE 2402
+   Date: 3/28/2019
+   Date updated: 4/12/2019
+   Lab #: Lab 4 - Products Page
+   Description: Page containing the types of Products sold at Chade's Bicycle Shop
+   Filename: jds_4_product.htm
+   -->
+   
+   
+   <!--I added a slide show photo gallery using JavaScript. Every 3 seconds the image will change. I also plan to add arrows to add functionality for user controlled cycling through the photos. The script is a separate file named jds_4_myphoto.js  -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Chade's Bicycle Company is a local bicycle shop servicing the Dallas/Fort Worth Metroplex">
+	<meta name="keywords" content="bicycle, products, for sale, shopping">
+	<meta name="author" content="Justin Smith">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Products</title>   
+	<link rel="stylesheet" media="screen and (max-device-width: 999px)" href="css/jds_2_mobilestyles.css" />
+	<link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="css/jds_2_chadestyles.css" />
+	<link rel="stylesheet" media="screen" href="css/jds_4_product_styles.css" />	
+	<link rel="shortcut icon" href="images/jds_3_favicon.png" type="image/x-icon">
+	<script src="scripts/modernizr.custom.05819.js"></script>
+	<style>
+		
+	</style>
+</head>
+
+<body>
+	<header>
+		<div>
+			<a href="index.htm"><img id="logo" src="images/jds_2_logo.jpg" alt="Company Logo" title="Chade's Bicycle Company Logo" /></a>				
+		</div>			
+	</header>
+	<div id="container">		 
+		<nav id="nav">
+			<a id="navicon" href="#menu">&#9776; Menu</a>
+				<ul id="dropContent">
+					<li><a href="index.htm" title="Chade's Bicyce Company">Chade&#39;s Bicycle Company</a></li>
+					<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+					<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+					<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+					<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+					<li><a href="#" title="Buying Tips" tabindex="-1" id="tips">Buying Tips&nbsp;&nbsp;&nbsp;&#8659;</a></li>			<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip1" title="Tip 1">Consider the Usage</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip2" title="Tip 2">How much to Spend</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip3" title="Tip 3">Physical Features</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip4" title="Tip 4">Possible Accessories</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip5" title="Tip 5">Take a Test Ride</a></li>					
+					<li><a id="currentpage"><a href="#" title="Current Page" id="products">Products</a></li>
+					<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+					<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs&nbsp;&nbsp;&nbsp;&#8659;</a></li>		<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav2"><a href="https://gdbclub.clubexpress.com/" target="_blank" title="Greater Dallas Bicyclists">Greater Dallas Bicyclists</a></li>
+					<li class="hiddenNav2"><a href="https://www.fwbaclub.org/" target="_blank" title="Fort Worth Bicycling Association">Fort Worth Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="http://carrolltoncycling.com/" target="_blank" title="Carrollton Cycling Club">Carrollton Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://planobicycle.org/" target="_blank" title="Plano Bicycling Association">Plano Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="https://thea.com/CC-Cycling-Club/" target="_blank" title="Corpus Christi Bicycle Club">Corpus Christi Bicycle Club</a></li>
+					<li class="hiddenNav2"><a href="http://www.austinridgeriders.com/" target="_blank" title="Austin Ridge Riders">Austin Ridge Riders</a></li>
+					<li class="hiddenNav2"><a href="https://utexascycling.com/" target="_blank" title="University of Texas Cycling Club">University of Texas Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://houstonbicycleclub.wildapricot.org/" target="_blank" title="Houston Bicycle Club">Houston Bicycle Club</a></li>
+					<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+					<li><a href="jds_4_login.htm" title="Customer Login" id="customer_login">Customer Login</a></li>
+				</ul>
+		</nav>
+	
+		<section class="mainContent" >
+		
+			<div id="flex_gallery">
+				<div id="leftarrow">		<!--I will add functionality to the arrows-->
+					<p>&lt;</p>
+					</div>
+				<div id="gallery" name="gallery">
+					<!--I added a slide show photo gallery using javascript -->			
+					<figure id="fig1">
+						<img src="images/jds_4_bike1.jpg" width="700" height="350" hidden alt="Bike Images" title="Bike Images" />
+					</figure>	
+					<figure id="fig2">
+						<img src="images/jds_4_bike2.jpg" width="700" height="350" hidden alt="Bike Images" title="Bike Images" />
+					</figure>
+					<figure id="fig3">
+						<img src="images/jds_4_bike3.jpg" width="700" height="350" hidden alt="Bike Images"  title="Bike Images" />
+					</figure>
+					<figure id="fig4">
+						<img src="images/jds_4_bike4.jpg" width="700" height="350" hidden alt="Bike Images" title="Bike Images" />
+					</figure>
+					<figure id="fig5">
+						<img src="images/jds_4_bike5.jpg" width="700" height="350" hidden alt="Bike Images" title="Bike Images"/>
+					</figure>					
+				</div>	
+				<div id="rightarrow">
+					<p>&gt;</p>		
+				</div>			
+			</div>
+			
+			<div id="countdownDiv">
+				<h2>Countdown to Women's Bike Sales</h2><hr>
+				<p id="countdown"></p>
+			</div>
+			
+			<div class="bikes">
+				<figure><img src="images/jds_4_standard.jpg" width="500" height="250" alt="Standard Bike" title="Standard Bike"/></figure>
+				<h2>Standard Bicycles</h2>
+				<p>Standard bikes are the most common types of bicycles used today. A standard bike has two wheels that are mounted in-line in a metal frame, a saddle seat, and is propelled by pedals connected to the rear wheel by a chain. Chade&#39;s offers a variety of standard bikes, including road bikes, racing bikes, mountain bikes, and cruisers.</p>
+				<span>
+				Prices starting at &#36;300<br/>
+				Status&colon;In-Stock
+				</span>
+			</div>
+			<div class="bikes">
+				<figure><img src="images/jds_4_specialty.jpg" width="500" height="250" alt="Specialty Bike" title="Specialty Bike"/></figure>
+				<h2>Specialty Bicycles</h2>
+				<p>Specialty bikes are cycles that fill a specific need and are for customers looking for something more non-traditional. We understand that “one size never fits all” and offer a range of special niche items, whether it be tandem bikes, cargo bikes, quadra-cycles, and special needs bikes. </p>
+				<span>
+				Prices starting at &#36;1000<br/>
+				Status&colon; Back-Ordered				
+				</span>
+			</div>
+			<div class="bikes">
+				<figure><img src="images/jds_4_custom.jpg" width="500" height="250" alt="Custom Bike" title="Custom Bike"/></figure>
+				<h2>Custom Bicycles</h2>
+				<p>Now YOU are the bike designer! Our custom bikes come in all shapes and colors made to fit you and your personality. Treat yourself and create a unique one of a kind bicycle!</p>
+				<span>
+				Prices starting at &#36;700<br/>
+				Status&colon; Custom Order
+				</span>
+			</div>
+			<div style="font-style:italic; font-size:.85rem; padding:5px;">
+				Product status is updated weekly.
+			</div>
+				
+		</section>
+		
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<hr noshade>
+	<footer>
+		<div class="sitemap">
+			<ul>
+				<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+				<li><a href="jds_3_aup.htm" title="Acceptable Use Policy">Acceptable Use Policy</a></li>	
+				<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+				<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+				<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+				<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+							
+			</ul>
+		</div>		
+		 
+		<div id="footCopyR">
+			&copy;Chade&#39;s Bicycle Company&#9; Last Updated&#58; 4/12/2019
+			<br>
+			<a href="jds_3_abiform.htm"><img id="email" src="images/jds_2_email.jpg" alt="email symbol" title="Customer Feedback Form" /></a> 
+			Chades<div class="hideThisText">Gibberish</div>Bikes@gmail.com
+			<p id="date"></p>
+		</div>	
+		 		
+		<div class="sitemap">
+			<ul>
+				<li><a href="jds_3_buying.htm" title="Buying Tips" id="tips">Buying Tips</a></li>
+				<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+				<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+				<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs</a></li>
+				<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+			</ul>
+		</div>		
+	</footer>
+	<script src="scripts/jds_4_myphoto.js"></script>	
+	<script src="scripts/jds_3_mynav.js"></script>
+	<script src="scripts/jds_3_mytime.js"></script>
+	<script src="scripts/jds_4_myclock.js"></script>	
+</body>
+
+</html>

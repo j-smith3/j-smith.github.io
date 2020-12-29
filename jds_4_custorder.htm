@@ -1,0 +1,350 @@
+<!--
+ Name: Justin Smith
+   Course: ITSE 2402
+   Date: 3/28/2019
+   Date updated: 4/12/2019
+   Lab #: Lab 4 - Customer Order Form
+   Description: Order form for Customers
+   Filename: jds_4_custorder.htm
+   -->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Chade's Bicycle Company is a local bicycle shop servicing the Dallas/Fort Worth Metroplex">
+	<meta name="keywords" content="purchasing, shopping, order form, ordering">
+	<meta name="author" content="Justin Smith">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Customer Order Form</title>   
+	<link rel="stylesheet" media="screen and (max-device-width: 999px)" href="css/jds_2_mobilestyles.css" />
+	<link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="css/jds_2_chadestyles.css" />
+	<link rel="stylesheet" media="screen" href="css/jds_4_form.css" />
+	<link rel="shortcut icon" href="images/jds_3_favicon.png" type="image/x-icon">
+	<script src="scripts/modernizr.custom.05819.js"></script>
+	<style>
+		#same_as_shipping{
+			margin-left:-360px;
+		}
+		input[type="radio"]{
+			margin-left:30%;
+		}
+		.form-row2 label{
+			margin-left:4%;
+		}
+		.form-row, .for-row2{
+			font-family: 'Prata', serif;
+		}
+		button{
+			width:125px;
+			height:35px;
+			margin:0px 5px;
+		}
+		#buttons{
+			margin:15px 32%;
+		}
+		@media screen and (max-width: 999px){
+			#buttons{
+				margin:-5px 0px;
+			}
+		}
+		
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<div>
+			<a href="index.htm"><img id="logo" src="images/jds_2_logo.jpg" alt="Company Logo" title="Chade's Bicycle Company Logo" /></a>				
+		</div>			
+	</header>
+	<div id="container">		 
+		<nav id="nav">
+			<a id="navicon" href="#menu">&#9776; Menu</a>
+				<ul id="dropContent">
+					<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+					<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+					<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+					<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+					<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+					<li><a href="#" title="Buying Tips" tabindex="-1" id="tips">Buying Tips&nbsp;&nbsp;&nbsp;&#8659;</a></li>			<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip1" title="Tip 1">Consider the Usage</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip2" title="Tip 2">How much to Spend</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip3" title="Tip 3">Physical Features</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip4" title="Tip 4">Possible Accessories</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip5" title="Tip 5">Take a Test Ride</a></li>					
+					<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+					<li><a id="currentpage"><a href="#" title="Current Page" id="shop">Shop</a></li>
+					<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs&nbsp;&nbsp;&nbsp;&#8659;</a></li>		<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav2"><a href="https://gdbclub.clubexpress.com/" target="_blank" title="Greater Dallas Bicyclists">Greater Dallas Bicyclists</a></li>
+					<li class="hiddenNav2"><a href="https://www.fwbaclub.org/" target="_blank" title="Fort Worth Bicycling Association">Fort Worth Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="http://carrolltoncycling.com/" target="_blank" title="Carrollton Cycling Club">Carrollton Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://planobicycle.org/" target="_blank" title="Plano Bicycling Association">Plano Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="https://thea.com/CC-Cycling-Club/" target="_blank" title="Corpus Christi Bicycle Club">Corpus Christi Bicycle Club</a></li>
+					<li class="hiddenNav2"><a href="http://www.austinridgeriders.com/" target="_blank" title="Austin Ridge Riders">Austin Ridge Riders</a></li>
+					<li class="hiddenNav2"><a href="https://utexascycling.com/" target="_blank" title="University of Texas Cycling Club">University of Texas Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://houstonbicycleclub.wildapricot.org/" target="_blank" title="Houston Bicycle Club">Houston Bicycle Club</a></li>
+					<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+					<li><a href="jds_4_login.htm" title="Customer Login" id="customer_login">Customer Login</a></li>
+				</ul>
+		</nav>
+	
+	
+		<section class="mainContent">
+			<form name="order_form" id="order_form" onSubmit="return validateForm()" autocomplete="on">
+				<fieldset>
+					<h2>Custom Bike Order</h2><hr>
+					<div class="form-row">
+						<label for="firstname" ><abbr>&#42; </abbr> First Name</label>
+						<input type="textbox" name="firstname" autofocus required placeholder="John"  size="50" maxlength="50"/>
+					</div>
+					<div class="form-row">
+						<label for="lastname"><abbr>&#42; </abbr> Last Name</label>
+						<input type="textbox" name="lastname" required placeholder="Doe"  size="50" maxlength="50"/>
+					</div>
+					
+					<div class="form-row">
+						<label for="address"><abbr>&#42; </abbr> Address</label>
+						<input type="textbox" name="address" required placeholder="2400 Aviation Dr"  size="50" maxlength="50"/>						
+					</div>
+					<div class="form-row">
+						<label for="city"><abbr>&#42; </abbr> City</label>
+						<input type="textbox" name="city" required placeholder="Dallas"  size="50" maxlength="50"/>
+					</div>
+					<div class="form-row">
+						<label for="state"><abbr>&#42; </abbr> State</label>
+						<select id="state-select" name="state-select" required>
+							<option value="">--Please choose an option--</option>
+							<option value="Alabama">Alabama</option>
+							<option value="Alaska">Alaska</option>
+							<option value="Arizona">Arizona</option>
+							<option value="Arkansas">Arkansas</option>
+							<option value="California">California</option>
+							<option value="Colorado">Colorado</option>
+							<option value="Connecticut">Connecticut</option>
+							<option value="Delaware">Delaware</option>
+							<option value="Florida">Florida</option>
+							<option value="Georgia">Georgia</option>
+							<option value="Hawaii">Hawaii</option>
+							<option value="Idaho">Idaho</option>
+							<option value="Illinois">Illinois</option>
+							<option value="Indiana">Indiana</option>
+							<option value="Iowa">Iowa</option>
+							<option value="Kansas">Kansas</option>
+							<option value="Kentucky">Kentucky</option>
+							<option value="Louisiana">Louisiana</option>
+							<option value="Maine">Maine</option>
+							<option value="Maryland">Maryland</option>
+							<option value="Massachusetts">Massachusetts</option>
+							<option value="Michigan">Michigan</option>
+							<option value="Minnesota">Minnesota</option>
+							<option value="Mississippi">Mississippi</option>
+							<option value="Missouri">Missouri</option>
+							<option value="Montana">Montana</option>
+							<option value="Nebraska">Nebraska</option>
+							<option value="Nevada">Nevada</option>
+							<option value="New Hampshire">New Hampshire</option>
+							<option value="New Jersey">New Jersey</option>
+							<option value="New Mexico">New Mexico</option>
+							<option value="New York">New York</option>
+							<option value="North Carolina">North Carolina</option>
+							<option value="North Dakota">North Dakota</option>
+							<option value="Ohio">Ohio</option>
+							<option value="Oklahoma">Oklahoma</option>
+							<option value="Oregon">Oregon</option>
+							<option value="Pennsylvania">Pennsylvania</option>
+							<option value="Rhode Island">Rhode Island</option>
+							<option value="South Carolina">South Carolina</option>
+							<option value="South Dakota">South Dakota</option>
+							<option value="Tennessee">Tennessee</option>
+							<option value="Texas">Texas</option>
+							<option value="Utah">Utah</option>
+							<option value="Vermont">Vermont</option>
+							<option value="Virginia">Virginia</option>
+							<option value="Washington">Washington</option>
+							<option value="West Virginia">West Virginia</option>
+							<option value="Wisconsin">Wisconsin</option>
+							<option value="Wyoming">Wyoming</option>						
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="zip"><abbr>&#42; </abbr> Zip code</label>
+						<input type="textbox" name="zip" required placeholder="75261" size="5" maxlength="5"/>
+					</div>
+					<div class="form-row">
+						<label for="phone"><abbr>&#42; </abbr> Phone Number</label>
+						<input type="textbox" name="phone" required placeholder="866-740-4531"  size="15" maxlength="15"/>
+					</div>
+					<div class="form-row">
+						<label for="email"><abbr>&#42; </abbr> Email Address</label>
+						<input type="textbox" name="email" required placeholder="bikefan@gmail.com" size="50" maxlength="50" />
+					</div>					
+					<div class="form-row">
+						<label for="orderDate">Date of Order</label>
+						<input  size="25" maxlength="25" type="textbox" id="order_date" disabled />
+					</div>	
+					<div class="form-row">
+						<label for="bikeType"><abbr>&#42; </abbr> Type of Bike</label>
+						<select id="bikeType-select" name="bikeType-select" required>
+							<option value="-1">--Please choose an option--</option>
+							<option value="Standard Bike">Standard Bike</option>
+							<option value="Specialty Bike">Specialty Bike</option>
+							<option value="Custom Bike">Custom Bike</option>
+						</select>
+					</div>	
+					<div class="form-row">
+						<label for="bike_quantity" size="4"><abbr>&#42; </abbr> Quantity of Bikes</label>
+						<input type="textbox" id="bike_quantity" name="bike_quantity" required placeholder="1" maxlength="4" size="4" />
+					</div>	
+					<div class="form-row">
+						<label for="bike_customization" size="50" maxlength="50">Customization</label>
+						<textarea size="50" maxlength="450" rows="2" cols="20" wrap="soft" placeholder="Please describe any custom features you would like. Examples include types of bikes (mountain, road, comfort), colors, type of frame, type of rims, type of handlebar, or number of gears." style="width:350px; height:150px"></textarea>
+					</div>									
+				</fieldset><br/>
+				<fieldset>
+					<h2>Payment Information</h2><hr>
+					<div class="form-row">
+						<label for="same_as_shipping">Same as Shipping</label>
+						<input type="checkbox" id="same_as_shipping" name="same_as_shipping" value="Same as Shipping" />
+					</div>
+					<div class="form-row">
+						<label for="firstname" ><abbr>&#42; </abbr> First Name</label>
+						<input type="textbox" name="firstname" autofocus required placeholder="John"  size="50" maxlength="50"/>
+					</div>
+					<div class="form-row">
+						<label for="lastname"><abbr>&#42; </abbr> Last Name</label>
+						<input type="textbox" name="lastname" required placeholder="Doe"  size="50" maxlength="50"/>
+					</div>
+					
+					<div class="form-row">
+						<label for="address"><abbr>&#42; </abbr> Address</label>
+						<input type="textbox" name="address" required placeholder="2400 Aviation Dr"  size="50" maxlength="50"/>						
+					</div>
+					<div class="form-row">
+						<label for="city"><abbr>&#42; </abbr> City</label>
+						<input type="textbox" name="city" required placeholder="Dallas"  size="50" maxlength="50"/>
+					</div>
+					<div class="form-row">
+						<label for="state"><abbr>&#42; </abbr> State</label>
+						<select id="state-select" name="state-select" required>
+							<option value="-1">--Please choose an option--</option>
+							<option value="Alabama">Alabama</option>
+							<option value="Alaska">Alaska</option>
+							<option value="Arizona">Arizona</option>
+							<option value="Arkansas">Arkansas</option>
+							<option value="California">California</option>
+							<option value="Colorado">Colorado</option>
+							<option value="Connecticut">Connecticut</option>
+							<option value="Delaware">Delaware</option>
+							<option value="Florida">Florida</option>
+							<option value="Georgia">Georgia</option>
+							<option value="Hawaii">Hawaii</option>
+							<option value="Idaho">Idaho</option>
+							<option value="Illinois">Illinois</option>
+							<option value="Indiana">Indiana</option>
+							<option value="Iowa">Iowa</option>
+							<option value="Kansas">Kansas</option>
+							<option value="Kentucky">Kentucky</option>
+							<option value="Louisiana">Louisiana</option>
+							<option value="Maine">Maine</option>
+							<option value="Maryland">Maryland</option>
+							<option value="Massachusetts">Massachusetts</option>
+							<option value="Michigan">Michigan</option>
+							<option value="Minnesota">Minnesota</option>
+							<option value="Mississippi">Mississippi</option>
+							<option value="Missouri">Missouri</option>
+							<option value="Montana">Montana</option>
+							<option value="Nebraska">Nebraska</option>
+							<option value="Nevada">Nevada</option>
+							<option value="New Hampshire">New Hampshire</option>
+							<option value="New Jersey">New Jersey</option>
+							<option value="New Mexico">New Mexico</option>
+							<option value="New York">New York</option>
+							<option value="North Carolina">North Carolina</option>
+							<option value="North Dakota">North Dakota</option>
+							<option value="Ohio">Ohio</option>
+							<option value="Oklahoma">Oklahoma</option>
+							<option value="Oregon">Oregon</option>
+							<option value="Pennsylvania">Pennsylvania</option>
+							<option value="Rhode Island">Rhode Island</option>
+							<option value="South Carolina">South Carolina</option>
+							<option value="South Dakota">South Dakota</option>
+							<option value="Tennessee">Tennessee</option>
+							<option value="Texas">Texas</option>
+							<option value="Utah">Utah</option>
+							<option value="Vermont">Vermont</option>
+							<option value="Virginia">Virginia</option>
+							<option value="Washington">Washington</option>
+							<option value="West Virginia">West Virginia</option>
+							<option value="Wisconsin">Wisconsin</option>
+							<option value="Wyoming">Wyoming</option>						
+						</select>
+					</div>
+					<div class="form-row">
+						<label for="zip"><abbr>&#42; </abbr> Zip code</label>
+						<input type="textbox" name="zip" required placeholder="75261" size="5" maxlength="5"/>
+					</div>
+					<div class="form-row2">
+						<label for="payment_type"  ><abbr>&#42; </abbr> Payment Type</label>
+						<br>
+						<input required type="radio" name="payment_type" value="Visa"/>Visa
+						<br>
+						<input required type="radio" name="payment_type" value="MasterCard"/>MasterCard
+						<br>
+						<input required type="radio" name="payment_type" value="American Express"/>American Express
+						<br>
+						<input  required type="radio" name="payment_type" value="PayPal"/>PayPal
+					</div>
+					<div class="form-row">
+						<label for="card_number"><abbr>&#42; </abbr> Card Number</label>
+						<input type="textbox" name="card_number" required  size="20" maxlength="16"/>
+					</div>					
+				</fieldset>
+				<div id="buttons">
+					<button id="sendBtn" name="sendBtn" type="submit">Send Us Feedback</button>
+					<button id="resetBtn" name="resetBtn" type="submit">Clear Form</button>
+				</div>
+			</form>				
+		</section>
+		
+	</div>
+	<hr noshade>
+	<footer>
+		<div class="sitemap">
+			<ul>
+				<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+				<li><a href="jds_3_aup.htm" title="Acceptable Use Policy">Acceptable Use Policy</a></li>	
+				<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+				<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+				<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+				<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+							
+			</ul>
+		</div>
+		
+		<div id="footCopyR">
+			&copy;Chade&#39;s Bicycle Company&#9; Last Updated&#58; 4/12/2019
+			<br>
+			<a href="jds_3_abiform.htm"><img id="email" src="images/jds_2_email.jpg" alt="email symbol" title="Customer Feedback Form" /></a> 
+			Chades<div class="hideThisText">Gibberish</div>Bikes@gmail.com
+			<p id="date"></p>
+		</div>	
+		
+		<div class="sitemap">
+			<ul>
+				<li><a href="jds_3_buying.htm" title="Buying Tips" id="tips">Buying Tips</a></li>
+				<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+				<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+				<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs</a></li>
+				<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+			</ul>
+		</div>		
+	</footer>
+	<script src="scripts/jds_3_mytime.js"></script>
+	<script src="scripts/jds_3_mynav.js"></script>
+	<script src="scripts/jds_4_mydate.js"></script>
+	<script src="scripts/jds_4_validate.js"></script>
+</body>
+
+</html>

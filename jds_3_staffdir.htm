@@ -1,0 +1,210 @@
+<!--
+ Name: Justin Smith
+   Course: ITSE 2402
+   Date: 3/9/2019
+   Date updated: 4/9/2019
+   Lab #: Lab 3 - Creating a Staff Directory
+   Description: Customer Feedback Form
+   Filename: jds_3_staffdir.htm
+-->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Chade's Bicycle Company is a local bicycle shop servicing the Dallas/Fort Worth Metroplex">
+	<meta name="keywords" content="Chade's Staff, employees, directory, contact">
+	<meta name="author" content="Justin Smith">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Our Staff</title>   
+	<link rel="stylesheet" media="screen and (max-device-width: 999px)" href="css/jds_2_mobilestyles.css" />
+	<link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="css/jds_2_chadestyles.css" />
+	<link rel="shortcut icon" href="images/jds_3_favicon.png" type="image/x-icon">
+	<script src="scripts/modernizr.custom.05819.js"></script>
+	
+	<style>
+	.mainContent div{
+		border-radius:15px;
+		margin-bottom:25px;
+	}
+	div p{
+		font-size:.85rem;
+		text-indent:100px;
+	}
+	div p a{
+		color:#DCAE1D;		
+	}
+	div p a:hover{
+		color:#7A9D96;
+		font-size:1.1rem;
+	}
+	@media only screen and (max-width: 425px) {
+		div p {
+		text-indent:0px;
+		}
+		
+	}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div>
+			<a href="index.htm"><img id="logo" src="images/jds_2_logo.jpg" alt="Company Logo" title="Chade's Bicycle Company Logo" /></a>				
+		</div>			
+	</header>
+	<div id="container">		 
+		<nav id="nav">
+			<a id="navicon" href="#menu">&#9776; Menu</a>
+				<ul id="dropContent">						
+					<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+					<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+					<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+					<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+					<li><a id="currentpage"><a href="#" title="Current Page" >Staff Directory</a></li>
+					<li><a href="#" title="Buying Tips" tabindex="-1" id="tips">Buying Tips&nbsp;&nbsp;&nbsp;&#8659;</a></li>			<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip1" title="Tip 1">Consider the Usage</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip2" title="Tip 2">How much to Spend</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip3" title="Tip 3">Physical Features</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip4" title="Tip 4">Possible Accessories</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip5" title="Tip 5">Take a Test Ride</a></li>					
+					<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+					<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+					<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs&nbsp;&nbsp;&nbsp;&#8659;</a></li>		<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav2"><a href="https://gdbclub.clubexpress.com/" target="_blank" title="Greater Dallas Bicyclists">Greater Dallas Bicyclists</a></li>
+					<li class="hiddenNav2"><a href="https://www.fwbaclub.org/" target="_blank" title="Fort Worth Bicycling Association">Fort Worth Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="http://carrolltoncycling.com/" target="_blank" title="Carrollton Cycling Club">Carrollton Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://planobicycle.org/" target="_blank" title="Plano Bicycling Association">Plano Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="https://thea.com/CC-Cycling-Club/" target="_blank" title="Corpus Christi Bicycle Club">Corpus Christi Bicycle Club</a></li>
+					<li class="hiddenNav2"><a href="http://www.austinridgeriders.com/" target="_blank" title="Austin Ridge Riders">Austin Ridge Riders</a></li>
+					<li class="hiddenNav2"><a href="https://utexascycling.com/" target="_blank" title="University of Texas Cycling Club">University of Texas Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://houstonbicycleclub.wildapricot.org/" target="_blank" title="Houston Bicycle Club">Houston Bicycle Club</a></li>
+					<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+					<li><a href="jds_4_login.htm" title="Customer Login" id="customer_login">Customer Login</a></li>
+				</ul>
+		</nav> 
+		<div id="staff" class="mainContent">
+			<div class="a">
+				<figure>
+					<img src="images/jds_3_michael.png" id="Michael Anderson" alt="Michael Anderson" title="Michael Anderson" />
+					<figcaption>					
+					<ul>
+						<li>Michael Anderson</li>
+						<li>CEO</li>
+						<li>&#40;817&#41; 555-6610</li>
+						<li>michael.anderson@andersonbikes.com</li>
+					</ul>
+					</figcaption>
+				</figure>				
+			</div>
+			<div class="a">
+				<figure>
+					<img src="images/jds_3_catherine.png" id="Catherine Anding" alt="Catherine Anding" title="Catherine Anding" />
+					<figcaption>
+						<li>Catherine Anding</li>
+						<li>Administrative Assistant</li>
+						<li>&#40;817&#41; 555-6620</li>
+						<li>catherine.anding@andersonbikes.com</li>
+					</ul>
+				</figcaption>
+				</figure>				
+			</div>
+			<div class="a">
+				<figure>
+					<img src="images/jds_3_james.png" id="James Hathaway" alt="James Hathaway" title="James Hathaway" />
+					<figcaption>				
+						<ul>
+							<li>James Hathaway</li>
+							<li>Design Manager</li>
+							<li>&#40;817&#41; 555-6630</li>
+							<li>james.hathaway@andersonbikes.com</li>
+						</ul>
+					</figcaption>
+				</figure>				
+			</div>
+			<div class="a">
+				<figure>	
+					<img src="images/jds_3_kristen.png" id="Kristen Dalton" alt="Kristen Dalton" title="Kristen Dalton" />
+					<figcaption>
+						<ul>
+							<li>Kristen Dalton</li>
+							<li>Accountant</li>
+							<li>&#40;817&#41; 555-6640</li>
+							<li>kristen.dalton@andersonbikes.com</li>
+						</ul>
+					</figcaption>
+				</figure>				
+			</div>			
+			<div class="a">
+				<figure>
+				<img src="images/jds_3_william.png" id="William Carlton" alt="William Carlton" title="William Carlton" />
+				<figcaption>			
+					<ul>
+						<li>William Carlton</li>
+						<li>Production Manager</li>
+						<li>&#40;817&#41; 555-6650</li>
+						<li>william.carlton@andersonbikes.com</li>
+					</ul>
+				</figcaption>
+			</figure>				
+			</div>				
+			<div class="a">
+				<figure>
+					<img src="images/jds_3_derek.png" id="Derek Scott" alt="Derek Scott" title="Derek Scott" />
+					<figcaption>									
+					<ul>
+						<li>Derek Scott</li>
+						<li>Store Manager</li>
+						<li>&#40;817&#41; 555-6660</li>
+						<li>derek.scott@andersonbikes.com</li>
+					</ul>
+				</figcaption>
+			</figure>				
+			</div>	
+			<div>
+				<p>&#42;&#42;All caricature art work contributed by <a href="https://pixabay.com/" target="_blank">pixabay.com</a>. 
+				</p>
+			</div>
+		</div>
+	</div>
+	<hr noshade>
+	<footer>
+		<div class="sitemap">
+			<ul>
+				<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+				<li><a href="jds_3_aup.htm" title="Acceptable Use Policy">Acceptable Use Policy</a></li>	
+				<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+				<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+				<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+				<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+							
+			</ul>
+		</div>
+		
+		<div id="footCopyR">
+			&copy;Chade&#39;s Bicycle Company&#9; Last Updated&#58; 4/9/2019
+			<br>
+			<a href="jds_3_abiform.htm"><img id="email" src="images/jds_2_email.jpg" alt="email symbol" title="Customer Feedback Form" /></a> 
+			Chades<div class="hideThisText">Gibberish</div>Bikes@gmail.com
+			<p id="date"></p>
+		</div>	
+		
+		<div class="sitemap">
+			<ul>
+				<li><a href="jds_3_buying.htm" title="Buying Tips" id="tips">Buying Tips</a></li>
+				<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+				<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+				<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs</a></li>
+				<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+			</ul>
+		</div>		
+	</footer>
+	<script src="scripts/jds_3_mytime.js"></script>
+	<script src="scripts/jds_3_mynav.js"></script>
+</body>
+
+<footer>
+</footer>
+
+</html>

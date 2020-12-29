@@ -1,0 +1,616 @@
+/*
+ Name: Justin Smith
+   Course: ITSE 2434
+   Date: 2/8/2019
+   Date updated: 3/24/2019
+   Lab #: Lab 2 - Beginning of Website
+   Description: Mobile Size Style sheet for Chades Bicycle Company
+   Filename: jds_2_mobilestyles.css
+
+/*
+font-family: 'Prata', serif;
+font-family: 'Handlee', cursive;
+font-family: 'Rancho', cursive;	
+font-family: 'Pacifico', cursive;
+
+Colors:
+MorningSky: #CAE4DB;
+Honey: #DCAE1D;
+Curulean: #00303F;
+Mist: #7A9D96;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Handlee|Pacifico|Rancho|Prata');
+
+@charset "utf-8";
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+html{
+	padding:;
+	font-size: 16px;
+}
+body {
+	background-color:white;
+	width:100vw;
+	margin:auto;
+	border-radius:15px;
+	border:;    	
+}
+.mainContent{	/*the main body content for most of the pages in the site*/
+	font-family: 'Prata', serif;
+	font-size:1rem;
+	font-weight:600;
+	color:#00303F;
+	border-radius:15px;	
+	
+}
+/*END DEFAULT STYLES*/
+/******************************************************************************/
+
+
+
+/*HEADER AREA STYLES WITH COMPANY LOGO*/
+#logo {		/*styles for the actual logo image*/
+	width:auto;
+	height:200px;
+	border-radius:15px;	
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto auto;
+}
+header div{ 		/*container for the logo*/
+	position:relative;
+	background: #00303F;
+	margin:10px;
+	border-radius:15px;
+	height:200px;
+	width:97%;
+}
+header{		/*styles for header */
+	padding-top:5px;
+}
+
+
+
+
+/*MOBILE NAVIGATION (BELOW CREATES THE NAVICON AND SETS IT TO DISPLAY) */
+#nav{ 		/*container for the navigation section*/
+	position:relative;
+	height:5px;
+	background-color:#DCAE1D;
+	margin:10px;	
+}
+#navicon {		 /*styles for the navigation icon*/
+	display:block;
+	font-weight:bold;
+	font-size:1.25rem;		
+	color:#DCAE1D;
+	text-align:left;
+	position:absolute;
+	bottom:20px;
+	left:15px;	
+}
+/*styles for hidden ul that holds navigation links (this is a ul)*/
+#dropContent { 	/*so hide the nav area until hovered over*/
+	display:none;	
+	position:absolute;
+	min-width:50vw;
+	z-index:1;
+	border:5px solid white;		
+}
+a#navicon:hover+ul, nav#nav ul:hover{/*once hovered over, display as a block*/
+	display:block;	
+}
+	
+#nav li{/*styles for list items in navigation list */
+	color:  #00303F;
+	list-style:none;
+	line-height: 60px;
+	font-size:1.25rem;
+	font-weight:900;
+	background-color: #DCAE1D;
+	text-align:center;
+	border-top:1px solid #00303F;	
+	border-bottom:1px solid #00303F;
+}
+
+a {/*nav list a tag styles*/
+	text-decoration:none;
+	color:  #00303F;
+	font-size:1rem;
+}
+
+#currentpage a{/*current page a tag styles*/
+	color:  #DCAE1D;
+}
+
+nav ul #currentpage {/*current page styles*/
+	background: #00303F;
+	color: #DCAE1D;
+	border-top:1px solid #DCAE1D;	
+	border-bottom:1px solid #DCAE1D;
+}
+/*Create the drop down menu... this will be a document fragment created in JS, and a new ul with 5 li will be created. "newUl" is id of this ul*/
+#newUl{			/*styles for the JS generated node ul*/ 
+	width:100px;
+	height:auto;
+	z-index:2;	
+	position:absolute;
+	left:50vw;			
+	top:350px;	
+}
+#newUl li{			/*styles for the JS generated node ul's list items */ 
+	background: #DCAE1D;
+	padding:0px;
+	margin:0px;
+	border:1px solid #00303F;
+}
+#newUl li:hover{	 	/*if new li is hovered over*/
+	background:yellow;
+}
+.hiddenNav, .hiddenNav2{
+	display:none;
+	background-color:#DCAE1D; 
+	opacity:1;
+	z-index:1;	
+}
+/*END ALL NAVIGATION STYLES8/
+/************************************************************************/
+
+
+
+
+
+/*FOOTER STYLES*/
+footer{/*styles for the footer on all pages*/
+	display:flex;
+	font-family: Arial, sans-serif;
+	margin:auto;
+	text-align:center;
+	font-weight: 700;
+	letter-spacing: 2px;
+	min-height:50px;
+	font-size:.75rem;
+	line-height:2rem;
+	font-variant: small-caps;
+	padding:10px;
+	justify-content:center; /*center horizontally*/
+	align-items:center;	/*center vertically*/
+	
+}
+.sitemap{		/*the three div containers inside of the footer. one will be for the site map, other for copyright info*/
+	flex:1 1 auto;
+	width:25%;	
+	line-height:1.5rem;
+}
+.sitemap li{			/*site map list items*/
+	list-style:none;
+}
+.sitemap li a{				/*site map links in footer*/
+	color:#7c8087;
+	font-size:.75rem;
+}
+.sitemap li a:hover{			/*when links are hovered over */
+	font-size:.82rem;
+}
+#footCopyR{ /*copyright information section of footer*/
+	flex:2 2 auto;
+	width:45%;
+	border-left:1px solid #7c8087;
+	border-right:1px solid #7c8087;
+	padding-top:10px;
+
+}
+#email{/*styles for the email image in the footer*/
+	padding-left:8px;
+	width:40px;
+	height:auto;
+}
+.hideThisText {	/*the content of this is mixed into the email address to help with security*/
+	display:none;
+}
+/*END FOOTER STYLES*/
+/******************************************************************************/
+
+
+
+
+/*HOME PAGE STYLES*/
+#companyInfo{	/*styles for main body content on home page*/
+	max-width:95vw;
+	margin:auto;
+	border-radius:15px;
+	font-family: 'Prata', serif;
+	font-size:.75rem;
+	font-weight:600;
+	color:#00303F;	
+	
+ } 
+#intro{			/*styles for intro paragraph about company on home page*/
+	border-radius:15px;	
+	color:#00303F;
+	line-height:1.5rem;
+	max-width:95vw;
+	padding:10px;
+}
+#homeContactInfo{			/*home page store info and hours section*/
+	padding-left:15px;
+	padding-top:15px;
+	padding-bottom:15px;
+	border-radius:15px;
+	color:#00303F;
+	line-height:2rem;
+	max-width:95vw;
+	background-image: linear-gradient(to right, #7A9D96, white);
+	border:2px solid #00303F;
+}
+#homeContactInfo li, address{			/*specific settings for the homepage address section*/
+	list-style-type:none;
+	text-indent:25px;	
+}
+#homeContactInfo h2{				/* headings for the store info and hours section*/
+	padding-top:10px;
+}
+#mission{				/*home page mission statement styles*/
+	max-width:95vw;
+	min-height:px;
+	margin:10px;
+	padding:15px;
+	background-color:;
+	border-radius:15px;
+	border:;
+	color:#00303F;
+	line-height:1.5rem;
+}
+#soon{					/* home page coming soon sections styles*/
+	max-width:95vw;
+	padding:15px;
+	border-radius:15px;
+	border:2px solid #00303F;
+	color:white;
+	line-height:1.5rem;
+	background-image: linear-gradient(to right, #7A9D96, white);
+}
+#soon h2{			/*h2 settings for the soon section on the home page*/
+	font-size:1.25rem;
+	color:#DCAE1D;
+}
+#soon p{				/* paragraph settings for the soon section on home page*/
+	padding:10px;
+	text-indent:50px;	
+}
+#aup {
+	padding:5px 10px 5px 10px;
+	margin:10px;
+}
+#aup a{	
+	color:#DCAE1D;
+		font-size:.75rem;
+}
+#aup a:hover{
+	color:#7A9D96;
+	font-size:1rem;
+}
+/*END HOME PAGE STYLES*/
+/******************************************************************************/
+
+
+
+
+/*CALENDAR PAGES STYLES*/
+		/*Calendar Styles used in table*/
+table {			/*styles for each table (month) of calendar*/
+	width:90vw;
+	height: 300px;
+	margin:auto;
+	border:2px solid #000080;
+	border-collapse: collapse;
+	background-color:#ADD8E6;
+	color:#000000;
+	font-family: 'Pacifico', cursive;
+	box-shadow:3px 3px 15px #000080,
+	-3px 3px 15px #000080;
+		
+}
+td {			/*styles for the table description (actual dates in calendar)*/
+	text-align:center;
+	border:2px solid #000080;
+	width:14vw;	
+	text-align:left;
+	
+}
+.month{				/*styles for the month part of the calendar*/
+	border-top: 2px solid #000080;
+	border-left: 2px solid #000080;
+	border-right: 2px solid #000080;
+	border-bottom: 0px solid #000080;
+	background-color:#ADD8E6;
+	font-size:1.25rem;
+	font-weight:900;
+	letter-spacing: 10px;
+	padding:7px;
+	box-shadow:3px 0px 15px #000080,
+	-3px -3px 15px #000080;		
+}
+th{			/*styles for table headings (month of the year)*/
+	border:2px solid #000080;
+}
+.holiday{			/*styles for company holidays on calendar*/
+	color:#FF0000;	
+}
+/*SET UP THE FLEX BOX FOR THE CALEDNAR PAGE. ONE SIDE WILL BE THE TABLE, THE OTHER A DIV*/
+#container3	 {/*this container holds all the tables and their matching descriptions (so pairs of tables and divs)*/
+	display: flex;	
+	justify-content: space-between;
+	width:95vw;
+	margin:auto;
+	flex-flow: row wrap;
+}
+#container3 table{/*styles for tables that are nested inside table 3. these make up the left column of the main content */
+	flex:1 1 50vw;
+	margin-bottom:30px;/*this increases gap bt rows*/	
+}
+#container3 div {		/*div for calendar dates*/
+	padding:10px;	
+	margin:5px;	
+	border-radius:15px;	
+	color: #00303F;
+	flex:1 1 25vw;
+	margin-bottom:30px;/*this increases gap bt rows*/	
+}
+#container3 ul{			/* styles for the ul that contain the list of company events for each month*/
+	margin:auto;
+	font-size:1rem;
+	line-height:3rem;
+	font-weight:900;
+	padding-left:40px;	
+}
+#container2{		/*the main body container for the calendar page, holds all main content except header and footer*/
+	 padding:15px;
+}
+/*END CALEDNAR PAGE STYLES*/
+ /******************************************************************************/
+ 
+
+
+
+
+
+/*CONTACT PAGE STYLES*/
+#contacts{			/*container for store info and map(main content on contacts page) */
+	width:95vw;
+}
+#storeInfo{			/*container for store hours, location, address, phone#*/
+	min-height:350px;	
+	max-width:95vw;	
+	font-size:.75rem;
+	line-height:2rem;
+	font-weight:900;
+	background-color:#00303F;
+	padding:15px;
+	border-radius:15px;
+	margin-left:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-right:-10px;
+	border:2px solid #00303F;
+	color:#00303F;
+	background-image: linear-gradient(to right, #7A9D96, white);
+}
+#storeInfo a{			/* links for store hours, location, phone#*/
+	color:white;
+}
+#storeInfo li{			/*list items for store hours, location, phone#*/
+	list-style-type:none;
+	text-indent:50px;	
+}
+#storeInfo address{
+	text-indent:50px;
+}
+#storeInfo address a{
+	font-size:.75rem;
+	color:#00303F;
+}
+#storeInfo address a:hover{
+	font-size:.85rem;
+}
+#map{		/* id for actual image name of the store map*/
+	width:95vw;
+	height:auto;
+	border-radius:15px;
+	margin:10px;
+}
+/*END CONTACT PAGE STYLES*/
+/******************************************************************************/
+
+
+
+
+
+/*STYLES FOR STAFF DIRECTORY PAGE*/
+#staff {/*outer container that holds each of the staff members*/	
+	padding:10px;
+	color:#00303F;
+}
+.a figure {/*styles for inner containers holding staff image and information*/	
+	width:100%;
+	display:flex; /*allows you to center */
+	justify-content:center; /*center horizontally*/
+	align-items:center;	/*center vertically*/
+	height: 400px;
+	background:#7A9D96;
+	padding:10px;	
+	background-image: linear-gradient(to right, #7A9D96, white);
+	border-radius:15px;	
+	border: 2px solid #00303F;
+}
+#staff img{ /*styles for staff images*/	
+	width:250px;
+	height:250px;
+	border:2px solid #00303F;
+	border-radius:75px;	
+	
+}
+figcaption{/*styles for the figcaption beside img*/
+	padding-left:30px;
+
+}
+#staff li{/*styles for ul li containing contact information*/
+	list-style-type:none;
+	font-weight:900;
+}
+/*END STYLES FOR STAFF DIRECTORY PAGE*/
+/******************************************************************************/
+
+
+
+
+
+/*CUSTOMER FEEDBACK STYLES */
+fieldset{ /*STYLES FOR FIELDSET*/
+	padding:10px;
+	border-radius:15px;
+	background-color:#7A9D96;
+	background-image: linear-gradient(to right, #7A9D96, white);
+	color:#00303F;
+	border:3px solid #00303F;
+}
+form{/*STYLES FOR FORM*/
+	padding:10px;
+	width:;
+}
+fieldset input{/*STYLES FOR INPUT*/
+	border:1px solid #00303F;
+	background-color:white;
+}
+#alertBox{ 		/*styles for document fragment (a div) that contains the error message for incomplete fields*/
+	height: 50px;
+	border: 2px solid #00303F;
+	background-image: linear-gradient(to right, #DCAE1D, white);
+	text-align:center;
+	padding:10px;
+	font-weight:900;
+	border-radius:8px;
+}
+#disclaimer{
+	font-size:.75rem;
+	padding:10px;
+}
+/*END CUSTOMER FEEDBACK STYLES*/
+/******************************************************************************/
+
+ 
+ 
+ 
+ 
+/*MEDIA RULES FOR 425PX OR LESS */
+@media only screen and (max-width: 425px) {
+	#container3 div {
+		font-size:0px;
+		padding:0px;
+		margin:auto auto;
+		width:15vw;
+	}
+	#container3 li{
+		font-size:.75rem;
+		padding:0px;
+		//margin:0px;
+		line-height:1rem;
+		margin:auto auto;
+		padding-bottom:20px;
+		padding-right:20px;
+	}
+	#container3 table {
+		padding:0px;
+		margin:0px;
+		margin-bottom:30px;
+	}
+	#newUl{			/*styles for the JS generated node ul*/ 
+	width:35vw;
+	height:auto;
+	z-index:2;	
+	position:absolute;
+	left:55vw;			
+	top:300px;	
+	}
+	/*STYLES FOR STAFF DIRECTORY PAGE*/
+	#staff {/*outer container that holds each of the staff members*/	
+		padding:10px;
+		color:#00303F;	
+	}
+	.a figure {/*styles for inner containers holding staff image and information*/	
+		max-width:400px;
+		display:flex; /*allows you to center */
+		justify-content:center; /*center horizontally*/
+		align-items:center;	/*center vertically*/
+		height: 300px;
+		background:#7A9D96;
+		padding:10px;	
+		background-image: linear-gradient(to right, #7A9D96, white);
+		border-radius:15px;	
+		border: 2px solid #00303F;
+	}
+	#staff img{ /*styles for staff images*/	
+		max-width:100px;
+		max-height:100px;
+		border:2px solid #00303F;
+		border-radius:75px;	
+	}
+	figcaption{/*styles for the figcaption beside img*/
+		padding-left:30px;
+		font-size:.75rem;
+	}
+	#staff li{/*styles for ul li containing contact information*/
+		list-style-type:none;
+		font-weight:900;
+	}
+	#staff div p a{
+		color:#DCAE1D;				
+	}
+	#staff div p a:hover{
+		color:#7A9D96;
+		font-size:1rem;
+	}
+	#staff div p{
+		font-size:.75rem;
+		text-align:center;
+	}
+}	
+/*END STYLES FOR STAFF DIRECTORY PAGE*/
+/******************************************************************************/
+/*
+Colors:
+MorningSky: #CAE4DB;
+Honey: #DCAE1D;
+Curulean: #00303F;
+Mist: #7A9D96;

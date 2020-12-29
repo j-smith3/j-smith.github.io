@@ -1,0 +1,898 @@
+	<!--
+ Name: Justin Smith
+   Course: ITSE 2402
+   Date: 2/5/2019
+   Date updated: 4/9/2019
+   Lab #: Lab 2 - Beginning of Website
+   Description: Events Calendar Page for Chade's Bicycle Company
+   Filename: jds_2_cal.htm
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Chade's Bicycle Company is a local bicycle shop servicing the Dallas/Fort Worth Metroplex">
+	<meta name="keywords" content="Chade's Company Calendar, Chade's Company Holidays, Chade's events">
+	<meta name="author" content="Justin Smith">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Company Calendar</title>
+	<link rel="stylesheet" media="screen and (max-device-width: 999px)" href="css/jds_2_mobilestyles.css" />
+	<link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="css/jds_2_chadestyles.css" />
+	<link rel="shortcut icon" href="images/jds_3_favicon.png" type="image/x-icon">
+	<script src="scripts/modernizr.custom.05819.js"></script>
+	
+</head>
+
+<body>							
+	<header>
+		<div>
+			<a href="index.htm"><img id="logo" src="images/jds_2_logo.jpg" alt="Company Logo" title="Chade's Bicycle Company Logo" /></a>				
+		</div> 			
+	</header>
+	<div id="container">
+		<nav id="nav">
+			<a id="navicon" href="#menu">&#9776; Menu</a>
+				<ul id="dropContent">
+					<li><a href="index.htm" title="Chade's Bicycle Company">Chade&#39;s Bicycle Company</a></li>
+					<li><a id="currentpage"><a href="#" title="Current Page" >Company Calendar</a></li>
+					<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+					<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+					<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+					<li><a href="#" title="Buying Tips" tabindex="-1" id="tips">Buying Tips&nbsp;&nbsp;&nbsp;&#8659;</a></li>			<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip1" title="Tip 1">Consider the Usage</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip2" title="Tip 2">How much to Spend</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip3" title="Tip 3">Physical Features</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip4" title="Tip 4">Possible Accessories</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip5" title="Tip 5">Take a Test Ride</a></li>					
+					<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+					<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+					<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs&nbsp;&nbsp;&nbsp;&#8659;</a></li>		<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav2"><a href="https://gdbclub.clubexpress.com/" target="_blank" title="Greater Dallas Bicyclists">Greater Dallas Bicyclists</a></li>
+					<li class="hiddenNav2"><a href="https://www.fwbaclub.org/" target="_blank" title="Fort Worth Bicycling Association">Fort Worth Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="http://carrolltoncycling.com/" target="_blank" title="Carrollton Cycling Club">Carrollton Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://planobicycle.org/" target="_blank" title="Plano Bicycling Association">Plano Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="https://thea.com/CC-Cycling-Club/" target="_blank" title="Corpus Christi Bicycle Club">Corpus Christi Bicycle Club</a></li>
+					<li class="hiddenNav2"><a href="http://www.austinridgeriders.com/" target="_blank" title="Austin Ridge Riders">Austin Ridge Riders</a></li>
+					<li class="hiddenNav2"><a href="https://utexascycling.com/" target="_blank" title="University of Texas Cycling Club">University of Texas Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://houstonbicycleclub.wildapricot.org/" target="_blank" title="Houston Bicycle Club">Houston Bicycle Club</a></li>
+					<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+					<li><a href="jds_4_login.htm" title="Customer Login" id="customer_login">Customer Login</a></li>
+				</ul>
+		</nav>
+	<div id="container2" class="mainContent">
+		<div  id="container3">
+			<table class="calendar_table">			
+				<caption class="month"><strong>January 2019</strong></caption>
+				<tr>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>	
+				</tr>
+				<tr>
+					<td></td>
+						<td></td>
+						<td class="holiday">1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>				
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>				
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>				
+					</tr>
+					<tr>
+						<td>20</td>
+						<td class="holiday">21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td class="holiday">25</td>
+						<td>26</td>				
+					</tr>
+					<tr>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>January 1st&colon; New Year&#39;s Day</li>
+						<li>January 21st&colon; Martin Luther King Jr. Day</li>
+						<li>January 25th&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>February 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>				
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>				
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>				
+					</tr>
+					<tr>
+						<td>17</td>
+						<td class="holiday">18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td class="holiday">22</td>
+						<td>23</td>				
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>February 18th&colon; President&#39;s Day</li>
+						<li>February 22nd&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">			
+					<caption class="month"><strong>March 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>				
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>				
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>				
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>				
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td class="holiday">29</td>
+						<td>30</td>				
+					</tr>
+					<tr>
+						<td>31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>March 29th&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>April 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>				
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>				
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>				
+					</tr>
+					<tr>
+						<td class="holiday">21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td class="holiday">26</td>
+						<td>27</td>				
+					</tr>
+					<tr>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>April 21st&colon; Easter</li>
+						<li>April 26th&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>May 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>				
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>				
+					</tr>
+					<tr>
+						<td class="holiday">12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>				
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>				
+					</tr>
+					<tr>
+						<td>26</td>
+						<td class="holiday">27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td class="holiday">31</td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>May 12th&colon; Mothers&#39;s Day</li>
+						<li>May 27th&colon; Memorial Day</li>
+						<li>May 31stth&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>June 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>				
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td class="holiday">8</td>				
+					</tr>
+					<tr>
+						<td class="holiday">9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td class="holiday">14</td>
+						<td>15</td>				
+					</tr>
+					<tr>
+						<td class="holiday">16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>				
+					</tr>
+					<tr>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td class="holiday">28</td>
+						<td>29</td>				
+					</tr>
+					<tr>
+						<td>30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>June 8th &#38; 9th&colon; Annual Sales Meeting in San Francisco</li>						
+						<li>June 14th&colon; Flag Day</li>
+						<li>June 16th&colon; Father&#39;s Day</li>
+						<li>June 28th&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>July 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>				
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td class="holiday">4</td>
+						<td>5</td>
+						<td>6</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td class="holiday">13</td>				
+					</tr>
+					<tr>
+						<td class="holiday">14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>				
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td class="holiday">26</td>
+						<td>27</td>				
+					</tr>
+					<tr>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td></td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>July 4th&colon; Independence Day</li>
+						<li>July 13th &#38; 14th&colon; Company Picnic</li>	
+						<li>July 26th&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>August 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>				
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>				
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>				
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>				
+					</tr>
+					<tr>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td class="holiday">30</td>
+						<td>31</td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>August 30th&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>September 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td>1</td>
+						<td class="holiday">2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>				
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>				
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>				
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td class="holiday">27</td>
+						<td>28</td>				
+					</tr>
+					<tr>
+						<td>29</td>
+						<td>30</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>September 2nd&colon; Labor Day</li>
+						<li>September 27th&colon; Monthly Safety Meeting</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">			
+					<caption class="month"><strong>October 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>				
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>				
+					</tr>
+					<tr>
+						<td>13</td>
+						<td class="holiday">14</td>
+						<td class="holiday">15</td>
+						<td class="holiday">16</td>
+						<td class="holiday">17</td>
+						<td class="holiday">18</td>
+						<td class="holiday">19</td>				
+					</tr>
+					<tr>
+						<td class="holiday">20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td class="holiday">25</td>
+						<td>26</td>				
+					</tr>
+					<tr>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td class="holiday">31</td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>October 14th&colon; Columbus Day</li>
+						<li>October 14th&hyphen;20th&colon; Annual Convention in Chicago</li>
+						<li>October 25th&colon; Monthly Safety Meeting</li>
+						<li>October 31st&colon; Hallween</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>November 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>1</td>
+						<td>2</td>				
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>				
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>				
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td class="holiday">22</td>
+						<td>23</td>				
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td class="holiday">27</td>
+						<td class="holiday">28</td>
+						<td class="holiday">29</td>
+						<td>30</td>				
+					</tr>
+				</table>
+				<div>
+					<ul>						
+						<li>November 22nd&colon; Monthly Safety Meeting</li>
+						<li>November 27th &amp; 29th&colon; Company Holidays</li>
+						<li>November 28nd&colon; Thanksgiving</li>
+					</ul>
+				</div>
+				<br>
+				<table class="calendar_table">				
+					<caption class="month"><strong>December 2019</strong></caption>
+					<tr>
+						<th>Sun</th>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>	
+					</tr>
+					<tr>
+						<td class="holiday">1</td>
+						<td class="holiday">2</td>
+						<td class="holiday">3</td>
+						<td class="holiday">4</td>
+						<td class="holiday">5</td>
+						<td class="holiday">6</td>
+						<td class="holiday">7</td>				
+					</tr>
+					<tr>
+						<td class="holiday">8</td>
+						<td class="holiday">9</td>
+						<td class="holiday">10</td>
+						<td class="holiday">11</td>
+						<td class="holiday">12</td>
+						<td class="holiday">13</td>
+						<td class="holiday">14</td>				
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td class="holiday">20</td>
+						<td>21</td>				
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td class="holiday">25</td>
+						<td class="holiday">26</td>
+						<td class="holiday">27</td>
+						<td class="holiday">28</td>				
+					</tr>
+					<tr>
+						<td class="holiday">29</td>
+						<td class="holiday">30</td>
+						<td class="holiday">31</td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>				
+					</tr>
+				</table>
+				<div>
+					<ul>
+						<li>December 1st &hyphen; 14th&colon; Bikes for Tykes Drive</li>
+						<li>December 20th&colon; Monthly Safety Meeting</li>
+						<li>December 25th&colon; Christmas</li>
+						<li>December 26th &hyphen; 31st&colon; Company Holidays</li>
+					</ul>
+				</div>
+			</div>	
+			
+		</div>
+	</div><!--This ends container-->
+	<hr noshade>
+	<footer>
+		<div class="sitemap">
+			<ul>
+				<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+				<li><a href="jds_3_aup.htm" title="Acceptable Use Policy">Acceptable Use Policy</a></li>	
+				<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+				<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+				<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+				<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+							
+			</ul>
+		</div>
+		
+		<div id="footCopyR">
+			&copy;Chade&#39;s Bicycle Company&#9; Last Updated&#58; 4/9/2019
+			<br>
+			<a href="jds_3_abiform.htm"><img id="email" src="images/jds_2_email.jpg" alt="email symbol" title="Customer Feedback Form" /></a> 
+			Chades<div class="hideThisText">Gibberish</div>Bikes@gmail.com
+			<p id="date"></p>
+		</div>	
+		
+		<div class="sitemap">
+			<ul>
+				<li><a href="jds_3_buying.htm" title="Buying Tips" id="tips">Buying Tips</a></li>
+				<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+				<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+				<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs</a></li>
+				<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+			</ul>
+		</div>		
+	</footer>
+	<script src="scripts/jds_3_mytime.js"></script>
+	<script src="scripts/jds_3_mynav.js"></script>
+</body>
+
+</html>

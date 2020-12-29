@@ -1,0 +1,200 @@
+<!--
+ Name: Justin Smith
+   Course: ITSE 2402
+   Date: 3/23/2019
+   Date updated: 4/9/2019
+   Lab #: 3 - A.U.P. Agreement Page
+   Description: Display the Accetable Use Policy
+   Filename: jds_3_aup.htm
+-->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Chade's Bicycle Company is a local bicycle shop servicing the Dallas/Fort Worth Metroplex">
+	<meta name="keywords" content="acceptable use policy, AUP">
+	<meta name="author" content="Justin Smith">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Acceptable Use Policy</title>   
+	<link rel="stylesheet" media="screen and (max-device-width: 999px)" href="css/jds_2_mobilestyles.css" />
+	<link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="css/jds_2_chadestyles.css" />
+	<link rel="shortcut icon" href="images/jds_3_favicon.png" type="image/x-icon">	
+	<script src="scripts/modernizr.custom.05819.js"></script>
+	
+	<style>	
+		
+		h1{
+			padding:15px 5px 5px 5px;
+			font-size:2rem;
+			text-indent:2rem;
+			font-weight:700;
+		}
+		div{
+			padding:0px;
+		}
+		h2{
+			padding:5px;
+			font-size:1.25rem;
+			text-indent:2rem;
+			font-weight:700;
+		}
+		p{
+			padding:15px;		
+		}
+		.aupRules li{
+			position:relative;
+			left:35px;
+			padding:5px;
+			
+		}
+		#nav {
+		width:400px;
+		}
+		#crumpTrail{
+			text-align:center;
+			font-size:.85rem;
+			margin:10px;			
+		}
+		a{
+			color:#00303F;
+			font-weight:700;
+			padding:10px 5px 10px 5px;
+		}
+		#aup{
+		padding:0px;
+		font-family: 'Prata', serif;
+		font-size:1rem;
+		font-weight:600;
+		color:#00303F;
+		background-image: linear-gradient(to bottom, #7A9D96, white);
+		margin:5px 10px 10px 5px;
+		}
+		#aup a:hover{
+			color:#00303F;
+		}
+		@media only screen and (max-width: 999px){
+		#aup{
+		padding:10px;
+		padding-right:15px;
+		margin-right:5px;
+		}
+		}
+	</style>	
+</head>
+
+<body>
+	<header>
+		<div>
+			<a href="index.htm"><img id="logo" src="images/jds_2_logo.jpg" alt="Company Logo" title="Chade's Bicycle Company Logo" /></a>				
+		</div>			
+	</header>
+	
+	<div id="crumpTrail" >
+		<a href="index.htm" title="Chades Bicycle Home Page">Home</a>&#9;>&#9;<a href="#" title="Current Page">Acceptable Use Policy</a>
+	</div>
+	
+	<div id="container">	<!--Holds nav along left side, and shared 80% on right -->	 
+		<nav id="nav">
+			<a id="navicon" href="#menu">&#9776; Menu</a>
+				<ul id="dropContent">
+					<li><a href="jds_4_buying.htm" title="Buying Tips">Chade&#39;s Bicycle Company</a></li>
+					<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+					<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+					<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+					<li><a href="jds_3_staffdir.htm" title="Staff Directory" >Staff Directory</a></li>
+					<li><a href="#" title="Buying Tips" tabindex="-1" id="tips">Buying Tips&nbsp;&nbsp;&nbsp;&#8659;</a></li>			<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip1" title="Tip 1">Consider the Usage</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip2" title="Tip 2">How much to Spend</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip3" title="Tip 3">Physical Features</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip4" title="Tip 4">Possible Accessories</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip5" title="Tip 5">Take a Test Ride</a></li>					
+					<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+					<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+					<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs&nbsp;&nbsp;&nbsp;&#8659;</a></li>		<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav2"><a href="https://gdbclub.clubexpress.com/" target="_blank" title="Greater Dallas Bicyclists">Greater Dallas Bicyclists</a></li>
+					<li class="hiddenNav2"><a href="https://www.fwbaclub.org/" target="_blank" title="Fort Worth Bicycling Association">Fort Worth Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="http://carrolltoncycling.com/" target="_blank" title="Carrollton Cycling Club">Carrollton Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://planobicycle.org/" target="_blank" title="Plano Bicycling Association">Plano Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="https://thea.com/CC-Cycling-Club/" target="_blank" title="Corpus Christi Bicycle Club">Corpus Christi Bicycle Club</a></li>
+					<li class="hiddenNav2"><a href="http://www.austinridgeriders.com/" target="_blank" title="Austin Ridge Riders">Austin Ridge Riders</a></li>
+					<li class="hiddenNav2"><a href="https://utexascycling.com/" target="_blank" title="University of Texas Cycling Club">University of Texas Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://houstonbicycleclub.wildapricot.org/" target="_blank" title="Houston Bicycle Club">Houston Bicycle Club</a></li>
+					<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+					<li><a href="jds_4_login.htm" title="Customer Login" id="customer_login">Customer Login</a></li>
+				</ul>
+		</nav>
+		
+		<div id="aup">
+			<h1>Acceptable Use Policy</h1><hr/>
+			<p>This acceptable use policy sets out the terms between you and us to define the conditions under which you may use our website <a title="Chades Bicycle Home Page" name="aupLinkHome" id="aupLinkHome" href="index.htm">Chade&#39;s Bicycle Company</a>. This policy applies to all users and visitors of our site.
+			<br/>Your use of our site means that you accept and agree to abide by the rules and policies that are defined as follows.
+			</p>
+			<br/>
+			<h2>Prohibited Uses</h2><hr/>
+			<p>You may use our site for lawful purposes. You may not use it for any of the following:
+				<ul class="aupRules" name="aupRules">
+					<li>In any way that violates local, state, national, or international laws. </li>
+					<li>In any way that is unlawful or attempts to be fraudulent towards others.</li>
+					<li>With any intent to harm others in any form. </li>
+					<li>To send, receive, upload, download, or distribute any unlawful content or content that violates <br/> copyright laws. </li>
+					<li>To send or receive any malicious software: this includes viruses, Trojan horses, worms, spyware,<br/>  adware, or any other forms of harmful programs that have the intent to cause harm to others or their property. </li>
+					<li>Not to reproduce, duplicate, copy, or re-sell any part of our website. This includes all images, logos, and content. </li>
+				</ul>
+			</p>
+			<br/>			
+			<h2>Suspension and Termination</h2><hr/>
+			<p>We will determine, using our best discretion, whether there have been any violations of this acceptable use policy through your use of our website. If a breach has occurred, we will take any actions we deem necessary. 
+			</p>
+			<p>Failure to comply with this acceptable use policy constitutes as a breach of service and can result in the following:
+			</p>
+			<ul class="aupRules" name="aupRules">
+				<li>Permanent withdrawal of your rights to use our site.</li>
+				<li>Issue you a warning.</li>
+				<li>Disclosure of any violations to law enforcement officials and any further legal action that may be<br/>  needed. </li>
+				<li>Legal proceedings against you for reimbursement of all monies lost in results of the breach. </li>
+			</ul>
+			<br/>
+			<h2>Changes to the Acceptable Use Policy</h2><hr/>
+			<p>We may revise this policy at any time. You should review this page and take notice of any rule changes, as they are legally binding. </p>
+		</div>
+	</div>
+	<br/><br/>
+	<hr id="hr" noshade>
+	<footer>
+		<div class="sitemap">
+			<ul>
+				<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+				<li><a href="jds_3_aup.htm" title="Acceptable Use Policy">Acceptable Use Policy</a></li>	
+				<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+				<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+				<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+				<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+							
+			</ul>
+		</div>
+		
+		<div id="footCopyR">
+			&copy;Chade&#39;s Bicycle Company&#9; Last Updated&#58; 4/9/2019
+			<br>
+			<a href="jds_3_abiform.htm"><img id="email" src="images/jds_2_email.jpg" alt="email symbol" title="Customer Feedback Form" /></a> 
+			Chades<div class="hideThisText">Gibberish</div>Bikes@gmail.com
+			<p id="date"></p>
+		</div>	
+		
+		<div class="sitemap">
+			<ul>
+				<li><a href="jds_3_buying.htm" title="Buying Tips" id="tips">Buying Tips</a></li>
+				<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+				<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+				<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs</a></li>
+				<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+			</ul>
+		</div>		
+	</footer>
+	<script src="scripts/jds_3_mytime.js"></script>
+	<script src="scripts/jds_3_mynav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!--
+ Name: Justin Smith
+   Course: ITSE 2402
+   Date: 3/19/2019
+   Date updated: 4/9/2019
+   Lab #: Lab 3 -- Buying Tips Page
+   Description: Buying Tips for Chades Bicycle Company
+   Filename: jds_3_buying.htm
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Chade's Bicycle Company is a local bicycle shop servicing the Dallas/Fort Worth Metroplex">
+	<meta name="keywords" content="buying tips, bicycle purchasing, bicycle tips, bicycle information">
+	<meta name="author" content="Justin Smith">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Buying Tips</title>   
+	<link rel="stylesheet" media="screen and (max-device-width: 999px)" href="css/jds_2_mobilestyles.css" />
+	<link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="css/jds_2_chadestyles.css" />
+	<link rel="shortcut icon" href="images/jds_3_favicon.png" type="image/x-icon">
+	<script src="scripts/modernizr.custom.05819.js"></script>
+	<style>	
+		.mainContent{
+		background-image: linear-gradient(to bottom, #7A9D96, white);
+		padding:20px;
+		margin-right:10px;
+		border-radius:15px;
+		border: 2px solid #00303F;
+		}
+		h1{
+			padding:15px 5px 5px 5px;
+			font-size:2rem;
+			text-indent:2rem;
+			font-weight:700;
+		}
+		h2{
+			padding:5px;
+			font-size:1.25rem;
+			text-indent:2rem;
+			font-weight:700;
+		}
+		p{
+			padding:15px;		
+		}
+		.tipsLi{
+			position:relative;
+			left:35px;
+			padding:5px;
+			margin:5px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<div>
+			<a href="index.htm"><img id="logo" src="images/jds_2_logo.jpg" alt="Company Logo" title="Chade's Bicycle Company Logo" /></a>				
+		</div>			
+	</header>
+	
+	<div id="container">		 
+		<nav id="nav">
+			<a id="navicon" href="#menu">&#9776; Menu</a>
+				<ul id="dropContent">
+					<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+					<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+					<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+					<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+					<li><a href="jds_3_staffdir.htm" title="Staff Directory" >Staff Directory</a></li>
+					<li><a href="#"><a href="#" title="Current Page"  tabindex="-1" id="tips">Buying Tips&nbsp;&nbsp;&nbsp;&#8659;</a></li>			<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip1" title="Tip 1">Consider the Usage</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip2" title="Tip 2">How much to Spend</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip3" title="Tip 3">Physical Features</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip4" title="Tip 4">Possible Accessories</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip5" title="Tip 5">Take a Test Ride</a></li>					
+					<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+					<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+					<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs&nbsp;&nbsp;&nbsp;&#8659;</a></li>		<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav2"><a href="https://gdbclub.clubexpress.com/" target="_blank" title="Greater Dallas Bicyclists">Greater Dallas Bicyclists</a></li>
+					<li class="hiddenNav2"><a href="https://www.fwbaclub.org/" target="_blank" title="Fort Worth Bicycling Association">Fort Worth Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="http://carrolltoncycling.com/" target="_blank" title="Carrollton Cycling Club">Carrollton Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://planobicycle.org/" target="_blank" title="Plano Bicycling Association">Plano Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="https://thea.com/CC-Cycling-Club/" target="_blank" title="Corpus Christi Bicycle Club">Corpus Christi Bicycle Club</a></li>
+					<li class="hiddenNav2"><a href="http://www.austinridgeriders.com/" target="_blank" title="Austin Ridge Riders">Austin Ridge Riders</a></li>
+					<li class="hiddenNav2"><a href="https://utexascycling.com/" target="_blank" title="University of Texas Cycling Club">University of Texas Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://houstonbicycleclub.wildapricot.org/" target="_blank" title="Houston Bicycle Club">Houston Bicycle Club</a></li>
+					<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+					<li><a href="jds_4_login.htm" title="Customer Login" id="customer_login">Customer Login</a></li>
+				</ul>
+		</nav>
+		<div id="buyingTips" class="mainContent">
+			<div id="tip1">
+				<h2>Consider the Usage</h2><hr/>
+				<p>&nbsp&nbsp&nbsp&nbsp&nbspWhat type of activities will you be doing with your bicycle? Do you plan to just ride paved trails? Or is off road more of your thing? There are a variety of categories that can dictate just what type of bicycle you should target. A few uses to consider are the following:<br/>
+				<ul class="tipsLi">
+					<li>Do you plan to ride off-road, in hilly areas with possibly steep inclines?</li>
+					<li>Do you plan to do most of your riding on paved surfaces and/or want a bike built for speed?</li>
+					<li>Do you plan to just casually ride, taking the scenic route?</li>
+				</ul><br/>
+				&nbsp&nbsp&nbsp&nbsp&nbspWhatever you plan to do the most with your bike should dictate what type of bike and accessories<br/> you will need. 
+				</p>
+			</div>
+			<div id="tip2">
+				<h2>How much to Spend</h2><hr/>
+				<p>&nbsp&nbsp&nbsp&nbsp&nbspLike most things, bikes can have a wide range of price points. There are name brand bicycle manufacturers, custom shops, new and used bikes – a wide array of choices that directly affect the cost point. When shopping around, compare features, materials, craftsmanship, and all factors you would normally consider with a major purchase. If you have questions regarding parts or accessories, just give us a call at the store and we would be glad to help. 
+				</p><br/>
+			</div>
+			<div id="tip3">
+				<h2>Physical Features </h2><hr/>
+				<p>&nbsp&nbsp&nbsp&nbsp&nbspWe all come in a variety of shapes and sizes and obviously not every bike will fit every physique. Make sure that the bike you choose is one that is a custom fit for you. Whether it is a taller framed bike, or a low rider, find one that fits your height. <br/><br/>
+				&nbsp&nbsp&nbsp&nbsp&nbspHandlebars can also affect your comfort level while riding. Make sure your ride is comfortable for you and you are not having to contort in awkward positions just to go for a ride. <br/><br/>
+				&nbsp&nbsp&nbsp&nbsp&nbspAdditional features can also be a matter of preference. For instance, your choice of brakes (pedal or handle), the number of available gears to interchange, or the suspension; these can all have an impact on what bike is right for you. 
+				</p><br/>
+			</div>
+			<div id="tip4">
+				<h2>Possible Accessories</h2><hr/>
+				<p>Additional accessories are usually a matter of preference but can really improve the enjoyment of your ride. Bikes are incredibly customizable, and the following areas are just some basic examples of modifications that you can choose.<br/>
+				<ul  class="tipsLi">
+					<li>Brakes: There are multiple types, but it boils down to do you want to stop with a level grip for your hand or using the pedals and your legs.</li>
+					<li>Gears: The gear box on a bike can either be a single gear, or it can have dozens of gears. Adjusting the gear level changes the intensity and resistance of the act of pedaling. Mountain bikes usually benefit from having the ability to lessen the pedal resistance on steep inclines.</li> 
+					<li>Suspension/Tires: As with cars, different forms of suspension and types of tires can affect the<br/> overall performance and handling of a bike. Depending on the intended activity, customization is<br/> a must.</li> 
+				</ul>
+				</p><br/>
+			</div>
+			<div id="tip5">
+				<h2>Take a Test Ride</h2><hr/>
+				<p>The best way to find out what you like in a bike, or if a certain bike is the one for you, is to take it for a test ride. You know what you like in a bike ride and what performance you hope to achieve, so take a test ride and find out if it is right for you. Consider characteristics like how the bike handles the terrain, if the frame feels sturdy and supportive, or if the ride is comfortable. It never hurts to try it out before you invest. 
+				</p><br/>
+			</div>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+	<hr noshade>
+	<footer>
+		<div class="sitemap">
+			<ul>
+				<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+				<li><a href="jds_3_aup.htm" title="Acceptable Use Policy">Acceptable Use Policy</a></li>	
+				<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+				<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+				<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+				<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+							
+			</ul>
+		</div>
+		
+		<div id="footCopyR">
+			&copy;Chade&#39;s Bicycle Company&#9; Last Updated&#58; 4/9/2019
+			<br>
+			<a href="jds_3_abiform.htm"><img id="email" src="images/jds_2_email.jpg" alt="email symbol" title="Customer Feedback Form" /></a> 
+			Chades<div class="hideThisText">Gibberish</div>Bikes@gmail.com
+			<p id="date"></p>
+		</div>	
+		
+		<div class="sitemap">
+			<ul>
+				<li><a href="jds_3_buying.htm" title="Buying Tips" id="tips">Buying Tips</a></li>
+				<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+				<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+				<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs</a></li>
+				<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+			</ul>
+		</div>		
+	</footer>
+	<script src="scripts/jds_3_mytime.js"></script>
+	<script src="scripts/jds_3_mynav.js"></script>
+</body>
+
+</html>

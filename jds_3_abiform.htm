@@ -1,0 +1,203 @@
+	<!--
+ Name: Justin Smith
+   Course: ITSE 2402
+   Date: 3/2/2019
+   Date updated: 4/12/2019
+   Lab #: Lab 3 - Creating a Customer Feedback Form
+   Description: Customer Feedback Form
+   Filename: jds_3_abiform.htm
+-->
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Chade's Bicycle Company is a local bicycle shop servicing the Dallas/Fort Worth Metroplex">
+	<meta name="keywords" content="customer feedback form, contact us, newsletter">
+	<meta name="author" content="Justin Smith">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Customer Feedback</title>   
+	<link rel="stylesheet" media="screen and (max-device-width: 999px)" href="css/jds_2_mobilestyles.css" />
+	<link rel="stylesheet" media="screen and (min-device-width: 1000px)" href="css/jds_2_chadestyles.css" />
+	<link rel="stylesheet" media="screen" href="css/jds_4_form.css" />
+	<link rel="shortcut icon" href="images/jds_3_favicon.png" type="image/x-icon">
+	<script src="scripts/modernizr.custom.05819.js"></script>	
+	
+	<style>
+
+	</style>
+</head>
+
+<body>
+	<header>
+		<div>
+			<a href="index.htm"><img id="logo" src="images/jds_2_logo.jpg" alt="Company Logo" title="Chade's Bicycle Company Logo" /></a>				
+		</div>			
+	</header>
+	<div id="container">		 
+		<nav id="nav">
+			<a id="navicon" href="#menu">&#9776; Menu</a>
+				<ul id="dropContent">						
+					<li><a href="index.htm" title="Chade's Bicycle Company">Chade&#39;s Bicycle Company</a></li>
+					<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+					<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li> 
+					<li><a id="currentpage"><a href="#" title="Current Page" >Customer Feedback</a></li>
+					<li><a href="jds_3_staffdir.htm"  title="Staff Directory">Staff Directory</a></li>
+					<li><a href="#" title="Buying Tips" tabindex="-1" id="tips">Buying Tips&nbsp;&nbsp;&nbsp;&#8659;</a></li>			<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip1" title="Tip 1">Consider the Usage</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip2" title="Tip 2">How much to Spend</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip3" title="Tip 3">Physical Features</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip4" title="Tip 4">Possible Accessories</a></li>
+					<li class="hiddenNav"><a href="jds_3_buying.htm#tip5" title="Tip 5">Take a Test Ride</a></li>					
+					<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+					<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+					<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs&nbsp;&nbsp;&nbsp;&#8659;</a></li>	<!--tab index -1 will apply focus to that element-->
+					<li class="hiddenNav2"><a href="https://gdbclub.clubexpress.com/" target="_blank" title="Greater Dallas Bicyclists">Greater Dallas Bicyclists</a></li>
+					<li class="hiddenNav2"><a href="https://www.fwbaclub.org/" target="_blank" title="Fort Worth Bicycling Association">Fort Worth Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="http://carrolltoncycling.com/" target="_blank" title="Carrollton Cycling Club">Carrollton Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://planobicycle.org/" target="_blank" title="Plano Bicycling Association">Plano Bicycling Association</a></li>
+					<li class="hiddenNav2"><a href="https://thea.com/CC-Cycling-Club/" target="_blank" title="Corpus Christi Bicycle Club">Corpus Christi Bicycle Club</a></li>
+					<li class="hiddenNav2"><a href="http://www.austinridgeriders.com/" target="_blank" title="Austin Ridge Riders">Austin Ridge Riders</a></li>
+					<li class="hiddenNav2"><a href="https://utexascycling.com/" target="_blank" title="University of Texas Cycling Club">University of Texas Cycling Club</a></li>
+					<li class="hiddenNav2"><a href="https://houstonbicycleclub.wildapricot.org/" target="_blank" title="Houston Bicycle Club">Houston Bicycle Club</a></li>
+					<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+					<li><a href="jds_4_login.htm" title="Customer Login" id="customer_login">Customer Login</a></li>
+				</ul>
+		</nav>		
+		<section class="mainContent">
+			<form name="custForm" id="custForm" onSubmit="return validateForm()" autocomplete="on">
+				<fieldset id="customer_info">
+					<h2>Customer Information</h2><hr>
+					<div class="form-row">
+						<label for="firstname"><abbr>&#42; </abbr> First Name</label>
+						<input type="textbox" name="firstname" autofocus required placeholder="John" size="50" maxlength="50"/>
+					</div>
+					<div class="form-row">
+						<label for="lastname"><abbr>&#42; </abbr> Last Name</label>
+						<input type="textbox" name="lastname" required placeholder="Doe" size="50" maxlength="50"/>
+					</div>
+					
+					<div class="form-row">
+						<label for="address"><abbr>&#42; </abbr> Address</label>
+						<input type="textbox" name="address" required placeholder="2400 Aviation Dr"  size="50" maxlength="50"/>						
+					</div>
+					<div class="form-row">
+						<label for="city"><abbr>&#42; </abbr> City</label>
+						<input type="textbox" name="city" required placeholder="Dallas"  size="50" maxlength="50"/>
+					</div>
+					<div class="form-row">
+						<label for="state"><abbr>&#42; </abbr> State</label>
+						<input type="textbox" name="state" required placeholder="Texas"  size="50" maxlength="50"/>
+					</div>
+					<div class="form-row">
+						<label for="zip"><abbr>&#42; </abbr> Zip code</label>
+						<input type="textbox" name="zip" required placeholder="75261"  size="50" maxlength="5"/>
+					</div>
+					<div class="form-row">
+						<label for="phone">Phone Number</label>
+						<input type="textbox" name="phone" placeholder="866-740-4531"  size="50" maxlength="15"/>
+					</div>
+					<div class="form-row">
+						<label for="email"><abbr>&#42; </abbr> Email Address</label>
+						<input type="textbox" name="email" required placeholder="bikefan@gmail.com"  size="50" maxlength="50"/>
+					</div>
+				</fieldset>
+				<br/>
+				<fieldset>
+					<h2>Additional Feedback</h2><hr>					
+					<div class="form-row2">
+						<label for="findUs">How did you hear about our site?</label>
+						<br>
+						<input type="checkbox" name="option1" value="SocialMedia"/>Social Media
+						<br>
+						<input type="checkbox" name="option2" value="InStore"/>In Store
+						<br>
+						<input type="checkbox" name="option3" value="SearchEngine"/>Search Engine
+						<br>
+						<input type="checkbox" name="option4" value="Shopping Online"/>Shopping Online
+						<br>
+						<input type="checkbox" name="option5" value="Friend"/>Friend Referral
+						<br>
+						<input type="checkbox" name="option6" value="Other"/>Other
+					</div>
+					<div class="form-row2">
+						<label for="joinNewsLetter">Would you like to join our newsletter?</label>
+						<br>
+						<input type="checkbox" name="yes" checked />Yes
+						<br>
+						<input type="checkbox" name="no" />No
+					</div>
+					<div class="form-row2" >
+						<label for="ridingMonths">How many months do you bicycle a year?</label>
+						<input type="textbox" name="ridingMonths" style="width:40px; text-align:center;" placeholder="12"  size="50" maxlength="2"/>
+					</div>
+					<div class="form-row2">
+						<label for="faveBrowser">Favorite Browser</label>
+						<br>
+						<input type="radio" name="faveBrowser" value="Chrome"/>Chrome
+						<br>
+						<input type="radio" name="faveBrowser" value="FireFox"/>FireFox
+						<br>
+						<input type="radio" name="faveBrowser" value="Safari"/>Safari
+						<br>
+						<input type="radio" name="faveBrowser" value="Internet Explorer"/>Internet Explorer
+					</div>	
+					<div class="form-row2">
+						<label for="suggestions">Suggestions</label><br/>
+						<textarea rows="2" cols="20" wrap="soft" style="width:350px; height:150px"  size="50" maxlength="450" placeholder="Please feel free to provide any suggestions for ways to improve our site. Your feedback is important to us."></textarea>
+					</div>					
+				</fieldset>
+				<button id="sendBtn" name="sendBtn" type="submit">Send Us Feedback</button>
+				<button id="resetBtn" name="resetBtn" type="reset">Clear Form</button>
+			</form>
+		
+			<div id="disclaimer">
+				<p><abbr>&#42; </abbr> Indicates a required field</p><br>
+				<p>Disclaimer&colon; Your privacy is important to us and under no circumstance will any of your personal data, including email, be sold or given out in any form.</p>	
+			</div>
+		</section>
+	</div>
+	
+	
+	
+	<hr noshade>
+	<footer>
+		<div class="sitemap">
+			<ul>
+				<li><a href="index.htm" title="Chade's Bicylce Company">Chade&#39;s Bicycle Company</a></li>
+				<li><a href="jds_3_aup.htm" title="Acceptable Use Policy">Acceptable Use Policy</a></li>	
+				<li><a href="jds_2_cal.htm" title="Company Calendar">Company Calendar</a></li>
+				<li><a href="jds_2_contact.htm" title="Contact Us">Contact Us</a></li>
+				<li><a href="jds_3_abiform.htm" title="Customer Feedback">Customer Feedback</a></li>
+				<li><a href="jds_3_staffdir.htm" title="Staff Directory">Staff Directory</a></li>
+							
+			</ul>
+		</div>
+		
+		<div id="footCopyR">
+			&copy;Chade&#39;s Bicycle Company&#9; Last Updated&#58; 4/12/2019
+			<br>
+			<a href="jds_3_abiform.htm"><img id="email" src="images/jds_2_email.jpg" alt="email symbol" title="Customer Feedback Form" /></a> 
+			Chades<div class="hideThisText">Gibberish</div>Bikes@gmail.com
+			<p id="date"></p>
+		</div>	
+		
+		<div class="sitemap">
+			<ul>
+				<li><a href="jds_3_buying.htm" title="Buying Tips" id="tips">Buying Tips</a></li>
+				<li><a href="jds_4_product.htm" title="Chade's Products" id="products">Products</a></li>
+				<li><a href="jds_4_custorder.htm" title="Shop for Bikes" id="shop">Shop</a></li>
+				<li><a href="jds_4_bikelink.htm" title="Biking Clubs" id="bike_clubs">Biking Clubs</a></li>
+				<li><a href="jds_4_faq.htm" title="FAQs" id="faqs">FAQ</a></li>
+			</ul>
+		</div>		
+	</footer>
+	<script src="scripts/jds_3_myscript.js"></script>
+	<script src="scripts/jds_3_mytime.js"></script>
+	<script src="scripts/jds_3_mynav.js"></script>
+</body>
+
+<footer>
+</footer>
+
+</html>
